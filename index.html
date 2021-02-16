@@ -51,6 +51,9 @@
     #d_slot{
         background: linear-gradient(45deg, black, rgb(255, 91, 91));
     }
+    #e_slot{
+        background: linear-gradient(45deg, black, rgb(166, 243, 245));
+        }
     #f_slot{
         background: linear-gradient(45deg, black, rgb(118, 131, 139));
     }
@@ -334,6 +337,30 @@
                     </div>
                 </div>
             </div>
+            
+            
+            <div class="col-lg-3 m-2">
+                <div class="card shadow text-center">
+                    <div class="card-header" id = "e_slot">                                     <!-- E slot couse card-->
+                        <div class="row">
+                            <div class="col-5 p-1 m-auto">
+                                <i class="fas fa-biohazard fa-5x"></i>
+                            </div>
+                            <div class="col-7 p-1">
+                                <p><b>HAZARDOUS WASTE MANAGEMENT COURSE</b></p>
+                                <p>CE5280| E-slot | 9 credits</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row">
+                            <div class="col">
+                                <a href="#">View course</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
             <div class="col-lg-3 m-2">
@@ -360,6 +387,15 @@
             </div>
 
 
+            
+        </div>
+        
+        
+        
+         <!--#########################             ROW 3 COURSES           #################-->
+
+        <div class="row justify-content-center">
+            
             <div class="col-lg-3 m-2">
                 <div class="card shadow text-center">
                     <div class="card-header" id = "j_slot">                                     <!-- J slot couse card-->
@@ -383,6 +419,7 @@
                 </div>
             </div>
         </div>
+
 
 
 <!--############################### IMPORTANT UPDATES SECTION    #################################-->
@@ -505,6 +542,24 @@
                     <a href="#" class = "class-link" target="_blank"><i class="fas fa-video"></i></a>
                 </div>
             </div>
+                
+                
+                
+<!--##############################               E SLOT TIMINGS      ######################## -->
+
+
+            <div class="row row-tabs mt-1 shadow justify-content-center">
+                <div class="col-4 text-center slot-sort" id="schedule_table_cells">
+                </div>
+                <div class="col-4 text-center time-slot " id="schedule_table_cells">
+                    ----
+                </div>
+                <div class="col-4 text-center " id="schedule_table_cells">
+                    <a href="#" class = "class-link" target="_blank"><i class="fas fa-video"></i></a>
+                </div>
+            </div>
+                
+ 
 
 
 <!--##############################             F SLOT TIMINGS      ######################## -->
@@ -611,6 +666,7 @@
 
 
                     row_tabs[6].style.display = 'none';
+                    row_tabs[7].style.display = 'none';
 
                     time_slots[0].innerHTML= "8:00 - 8:50 AM";          // MONDAY TIMINGS
                     time_slots[1].innerHTML= "9:00 - 9:50 AM";
@@ -641,24 +697,27 @@
                     slot_names[1].innerHTML = "C-SLOT(EVEN)";           //SLOT NAME - C EVEN
                     slot_names[2].innerHTML = "C-SLOT(ODD)";       //SLOT NAME - C ODD
                     slot_names[3].innerHTML = "D-SLOT";        //SLOT NAME - D 
-                    slot_names[4].innerHTML = "A-SLOT";              //SLOT NAME - A 
+                    slot_names[4].innerHTML = "E-SLOT";              //SLOT NAME - E
+                    slot_names[5].innerHTML = "A-SLOT";              //SLOT NAME - A 
                     //slot_names[6].innerHTML = "D-SLOT";
 
-                    row_tabs[5].style.display = 'none';
                     row_tabs[6].style.display = 'none';
+                    row_tabs[7].style.display = 'none';
 
 
                     time_slots[0].innerHTML= "8:00 - 8:50 AM";          // TUESDAY TIMINGS
                     time_slots[1].innerHTML= "9:00 - 9:50 AM";
                     time_slots[2].innerHTML= "9:00 - 9:50 AM";
                     time_slots[3].innerHTML= "10:00 - 10:50 AM";
-                    time_slots[4].innerHTML= "12:00 - 12:50 PM";
+                    time_slots[4].innerHTML= "11:00 - 11:50 AM";
+                    time_slots[5].innerHTML= "12:00 - 12:50 PM";
 
                     class_links[0].href = "https://teams.microsoft.com/l/meetup-join/19%3a3acd0c92801a4d9ba9dfb3e6f25d6e0f%40thread.tacv2/1613442614593?context=%7b%22Tid%22%3a%226ffa22f4-4568-4105-ad43-2e3ad4726957%22%2c%22Oid%22%3a%22a6fe6bea-e37c-438a-a524-cfbcf8cfb31d%22%7d"         // B-SLOT LINK
                     class_links[1].href = "https://teams.microsoft.com/l/meetup-join/19%3a5fd297f49154490db7705f6d61282886%40thread.tacv2/1613445563841?context=%7b%22Tid%22%3a%2240a60ea6-070b-4917-964e-a367067cfc01%22%2c%22Oid%22%3a%22acf5be8f-e5ad-4f94-a32f-97be632d0438%22%7d";          // C EVEN-SLOT LINK
                     class_links[2].href = "https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3A20b44cbcd25d4d3ca6fee52ce6afc421%40thread.tacv2%2F1613398611260%3Fcontext%3D%257b%2522Tid%2522%253a%252240a60ea6-070b-4917-964e-a367067cfc01%2522%252c%2522Oid%2522%253a%2522001355b6-7974-4717-9947-9ddab3e96f10%2522%257d%26anon%3Dtrue&type=meetup-join&deeplinkId=c101cce5-79c9-4edd-9b65-0b426d7b513f&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true";          // C-SLOT ODD LINK
                     class_links[3].href = "error_page.html";          //D-SLOT LINK
-                    class_links[4].href = "https://meet.google.com/lookup/dngb4yztow";                                  //A-SLOT LINK
+                    class_links[4].href = "https://meet.google.com/trd-ywfi-uoj";          //E-SLOT LINK
+                    class_links[5].href = "https://meet.google.com/lookup/dngb4yztow";      //A-SLOT LINK
                  //   class_links[5].href = "https://meet.google.com/ozj-ankk-fek";          //J-SLOT LINK
                     
                   //  class_link[6].href = "https://meet.google.com/grx-zqrn-juf"; // F slot
@@ -675,30 +734,33 @@
                     slot_names[0].innerHTML = "C-SLOT(EVEN)";           //SLOT NAME - C EVEN
                     slot_names[1].innerHTML = "C-SLOT(ODD)";       //SLOT NAME - C ODD
                     slot_names[2].innerHTML = "D-SLOT";        //SLOT NAME - D 
-                    slot_names[3].innerHTML = "F-SLOT HRJ";              //SLOT NAME - F
-                    slot_names[4].innerHTML = "B-SLOT";              //SLOT NAME - B
-                    slot_names[5].innerHTML = "J-SLOT";              //SLOT NAME - J
+                    slot_names[3].innerHTML = "E-SLOT";        //SLOT NAME - E 
+                    slot_names[4].innerHTML = "F-SLOT HRJ";              //SLOT NAME - F
+                    slot_names[5].innerHTML = "B-SLOT";              //SLOT NAME - B
+                    slot_names[6].innerHTML = "J-SLOT";              //SLOT NAME - J
                     //slot_names[6].innerHTML = "D-SLOT";           //SLOT NAME -D
 
 
                    // row_tabs[5].style.display = 'none';
-                    row_tabs[6].style.display = 'none';
+                    row_tabs[7].style.display = 'none';
 
 
                     time_slots[0].innerHTML= "8:00 - 8:50 AM";          // WEDNESDAY TIMINGS
                     time_slots[1].innerHTML= "8:00 - 8:50 AM";
                     time_slots[2].innerHTML= "9:00 - 9:50 AM";
-                    time_slots[3].innerHTML= "11:00 - 11:50 AM";
-                    time_slots[4].innerHTML= "1:00 - 1:50 PM";
-                    time_slots[5].innerHTML= "2:00 - 3:15 PM";
+                    time_slots[3].innerHTML= "10:00 - 10:50 AM";
+                    time_slots[4].innerHTML= "11:00 - 11:50 AM";
+                    time_slots[5].innerHTML= "1:00 - 1:50 PM";
+                    time_slots[6].innerHTML= "2:00 - 3:15 PM";
 
 
-                    class_links[0].href = "error_page.html";          // A-SLOT LINK
-                    class_links[1].href = "error_page.html";          // B-SLOT LINK
-                    class_links[2].href = "error_page.html";          // C-SLOT EVEN LINK
-                    class_links[3].href = "https://meet.google.com/grx-zqrn-juf";          //C-SLOT ODD LINK
-                    class_links[4].href = "error_page.html";                                  //D-SLOT LINK
-                    class_links[5].href = "https://meet.google.com/ozj-ankk-fek";          //J-SLOT LINK
+                    class_links[0].href = "error_page.html";          // C EVEN-SLOT LINK
+                    class_links[1].href = "error_page.html";          // C ODD-SLOT LINK
+                    class_links[2].href = "error_page.html";          // D-SLOT LINK
+                    class_links[3].href = "https://meet.google.com/trd-ywfi-uoj";          // E-SLOT LINK
+                    class_links[4].href = "https://meet.google.com/grx-zqrn-juf";          //F-SLOTLINK
+                    class_links[5].href = "error_page.html";                                  //B-SLOT LINK
+                    class_links[6].href = "https://meet.google.com/ozj-ankk-fek";          //J-SLOT LINK
 
                     //  class_link[6].href = "https://meet.google.com/grx-zqrn-juf" // F slot
 
@@ -708,37 +770,40 @@
 
 
                 case 4:                                                            // THURSDAY
-
-                    slot_names[0].innerHTML = "F-SLOT HRJ";           //SLOT NAME - F
-                    slot_names[1].innerHTML = "A-SLOT";       //SLOT NAME - A
-                    slot_names[2].innerHTML = "D-SLOT";        //SLOT NAME - D 
-                    slot_names[3].innerHTML = "J-SLOT";              //SLOT NAME - J
+                    
+                    slot_names[0].innerHTML = "E-SLOT";           //SLOT NAME - E
+                    slot_names[1].innerHTML = "F-SLOT HRJ";           //SLOT NAME - F
+                    slot_names[2].innerHTML = "A-SLOT";       //SLOT NAME - A
+                    slot_names[3].innerHTML = "D-SLOT";        //SLOT NAME - D 
+                    slot_names[4].innerHTML = "J-SLOT";              //SLOT NAME - J
                  //   slot_names[4].innerHTML = "B-SLOT";              //SLOT NAME - B
                  //   slot_names[5].innerHTML = "J-SLOT";              //SLOT NAME - J
                     //slot_names[6].innerHTML = "D-SLOT";
 
                     // row_tabs[5].style.display = 'none';
 
-                    row_tabs[4].style.display = 'none';
                     row_tabs[5].style.display = 'none';
                     row_tabs[6].style.display = 'none';
+                    row_tabs[7].style.display = 'none';
 
 
-                    time_slots[0].innerHTML= "9:00 - 9:50 AM";          // THURSDAY TIMINGS
-                    time_slots[1].innerHTML= "11:00 - 11:50 AM";
-                    time_slots[2].innerHTML= "1:00 - 1:50 PM";
-                    time_slots[3].innerHTML= "3:30 - 4:45 PM";
+                    time_slots[0].innerHTML= "8:00 - 8:50 AM";
+                    time_slots[1].innerHTML= "9:00 - 9:50 AM";          // THURSDAY TIMINGS
+                    time_slots[2].innerHTML= "11:00 - 11:50 AM";
+                    time_slots[3].innerHTML= "1:00 - 1:50 PM";
+                    time_slots[4].innerHTML= "3:30 - 4:45 PM";
                    // time_slots[4].innerHTML= "1:00 - 1:50 PM";
                     //time_slots[5].innerHTML= "2:00 - 3:15 PM";
 
-
-                    class_links[0].href = "https://meet.google.com/grx-zqrn-juf"; // F slot
-                    class_links[1].href = "error_page.html";          // A-SLOT LINK
+                        
+                    class_links[0].href = "https://meet.google.com/trd-ywfi-uoj" //E-SLOT LINK
+                    class_links[1].href = "https://meet.google.com/grx-zqrn-juf"; // F slot
+                    class_links[2].href = "error_page.html";          // A-SLOT LINK
                   //  class_links[1].href = "error_page.html";          // B-SLOT LINK
                   //  class_links[2].href = "error_page.html";          // C-SLOT EVEN LINK
                   //  class_links[3].href = "error_page.html";          //C-SLOT ODD LINK
-                    class_links[2].href = "error_page.html";                                  //D-SLOT LINK
-                    class_links[3].href = "https://meet.google.com/ozj-ankk-fek";          //J-SLOT LINK
+                    class_links[3].href = "error_page.html";                                  //D-SLOT LINK
+                    class_links[4].href = "https://meet.google.com/ozj-ankk-fek";          //J-SLOT LINK
                     
                     break;  
 
@@ -765,6 +830,7 @@
 
                     row_tabs[5].style.display = 'none';
                     row_tabs[6].style.display = 'none';
+                    row_tabs[7].style.display = 'none';
 
 
                     time_slots[0].innerHTML= "8:00 - 8:50 AM";          // FRIDAY TIMINGS
@@ -788,12 +854,13 @@
                     break;
                 
                 default:
-                            for(var i=0; i<6; i++){
+                            for(var i=0; i<7; i++){
                                 row_tabs[i].style.display = 'none';
                             }
-                            slot_names[6].innerHTML = " ";
-                            time_slots[6].innerHTML = " <h6><b>HAPPY WEEKEND :)<b><\h6>"
-                            class_links[6].innerHTML=" ";
+                            slot_names[7].innerHTML = "J-SLOT EXTRA CLASS(ODE, PDE)";
+                            time_slots[7].innerHTML = "11:00 -12:30 PM"
+                      //      time_slots[7].innerHTML = " <h6><b>HAPPY WEEKEND :)<b><\h6>"
+                            class_links[7].innerHTML="https://meet.google.com/ozj-ankk-fek";
 
         }
 
