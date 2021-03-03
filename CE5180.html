@@ -350,6 +350,16 @@
     </div>
     </div>
     
+    <script>
 
+        function collapse(elem){
+
+            var parentid = elem.parentNode.id;
+            var collapsing_element = document.getElementById('collapsable');
+            collapsing_element.style.display = (collapsing_element.style.display == 'none'?'block':'none');
+            elem.innerHTML = (elem.innerHTML=='<i class="fas fa-arrow-right"></i>'?'<i class="fas fa-arrow-down"></i>':'<i class="fas fa-arrow-right"></i>')
+
+        }
+    </script>
 </body>
 </html>
