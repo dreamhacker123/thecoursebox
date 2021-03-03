@@ -222,58 +222,19 @@
                     <div class="col">
 
                         <div class="row justify-content-center">
-                            <div class="col-md-10 px-3 text-left">
+                            <div class="col-md-12 px-3 text-left">
                                 <p style="font-size: 15px; color: grey;"><i class="fas fa-video"></i><b>  LECTURE VIDEOS:</b></p>         <!-------------------- CARD HEADING  --------------------------->
                             </div>
-                            <div class="col-2">
-                                <div class="btn btn-light btn-outline-dark" id="collapse-button" onclick="collapse(this)" style= " font-size:12px; border-radius: 50% !important"><i class="fas fa-arrow-right"></i></div>   <!--      collapse button         -->
+                        </div>
+
+
+                        <div class="row">                             <!-------------------- VIDEOS CONTENT  --------------------------->
+                            <div class="col-md-3 text-left mx-3 tab-effect">
+                                <p class="m-auto px-2 py-3"><b><a style="font-size: 15px; color: #004149 ;text-decoration: none;" href="https://drive.google.com/drive/folders/1Yqvom2qdEJginD_QhGUqjliMLWml-V43?usp=sharing" target="_blank"><i class="fas fa-folder folder"></i>  Lecture Videos</a></b></p>        
                             </div>
                         </div>
-                        
 
 
-                        <div class="row justify-content-center" id="collapsable" style="display: none;" >
-                            <div class="col">
-
-
-
-
-
-                                <div class="row">
-
-                                    <div class="col-md-3 mx-3 mt-2">
-                                        <div style='max-width: 320px'><div style='position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;'><iframe width="320" height="180" src="https://drive.google.com/file/d/1l8mwH9tJDPXO02iWtKG6SrCZa4ZOMkn3/preview" allowfullscreen style="border:none; position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%; max-width: 100%;" ></iframe></div></div> <!--LECTURE 9-->
-                                    </div>
-  
-         
-                               </div>
-                                
-                                
-                               <div class="row">
-
-                                    <div class="col-md-3 mx-3 mt-2">
-                                        <div style='max-width: 320px'><div style='position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;'><iframe width="320" height="180" src="https://web.microsoftstream.com/embed/video/25508f28-6d8d-4ded-8c2b-d5a135d3396c?autoplay=false&amp;showinfo=true" allowfullscreen style="border:none; position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%; max-width: 100%;"></iframe></div></div>                                    
-                                   </div>
-                        
-
-                                   <div class="col-md-3 mx-3 mt-2">
-                                         <div style='max-width: 320px'><div style='position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;'><iframe width="320" height="180" src="https://web.microsoftstream.com/embed/video/59832d18-a988-4f4b-9ce6-e934ccbcca1c?autoplay=false&amp;showinfo=true" allowfullscreen style="border:none; position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%; max-width: 100%;"></iframe></div></div>                                   
-                                   </div>
-                                    
-                                   <div class="col-md-3 mx-3 mt-2">
-                                        <div style='max-width: 320px'><div style='position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;'><iframe width="320" height="180" src="https://web.microsoftstream.com/embed/video/1190299a-32f8-4e04-9ac8-b13fb38018a9?autoplay=false&amp;showinfo=true" allowfullscreen style="border:none; position: absolute; top: 0; left: 0; right: 0; bottom: 0; height: 100%; max-width: 100%;"></iframe></div></div>                                    
-                                   </div>
-         
-                               </div>
-                                
-                                
-                                
-
-                            </div>
-
-
-
-                        </div>
                     </div>
                 </div>
                 
@@ -364,19 +325,6 @@
     </div>
     </div>
     
-    <!--#######################################javascript goes here! ####################-->
 
-
-    <script>
-
-        function collapse(elem){
-
-            var parentid = elem.parentNode.id;
-            var collapsing_element = document.getElementById('collapsable');
-            collapsing_element.style.display = (collapsing_element.style.display == 'none'?'block':'none');
-            elem.innerHTML = (elem.innerHTML=='<i class="fas fa-arrow-right"></i>'?'<i class="fas fa-arrow-down"></i>':'<i class="fas fa-arrow-right"></i>');
-
-        }
-    </script>
 </body>
 </html>
